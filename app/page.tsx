@@ -65,10 +65,11 @@ export default function Home() {
                 <Image
                   src="/thedermalounge-photo.jpg"
                   alt="The Derma Lounge clinic"
-                  width={800}
-                  height={600}
+                  width={1200}
+                  height={800}
+                  quality={100}
+                  priority={true}
                   className="object-cover w-full h-full"
-                  priority
                 />
               </div>
             </div>

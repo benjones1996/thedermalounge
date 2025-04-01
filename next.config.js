@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-      domains: [],
-      unoptimized: true,
-    },
-  }
-  
-  module.exports = nextConfig
+  output: 'standalone',
+  images: {
+    remotePatterns: [],
+    unoptimized: false,
+  },
+}
+
+module.exports = nextConfig
