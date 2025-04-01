@@ -4,6 +4,7 @@ import { ServiceCard } from "@/components/service-card"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -60,10 +61,15 @@ export default function Home() {
                   </Button>
                 </Link>
               </div>
-              <div className="relative h-[400px] bg-primary/20">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="text-primary/40 text-2xl font-serif tracking-widest uppercase">Image Placeholder</p>
-                </div>
+              <div className="relative h-[400px] w-full overflow-hidden">
+                <Image
+                  src="/thedermalounge-photo.jpg"
+                  alt="The Derma Lounge clinic"
+                  width={800}
+                  height={600}
+                  className="object-cover w-full h-full"
+                  priority
+                />
               </div>
             </div>
           </div>
