@@ -62,14 +62,10 @@ export default function Home() {
                 </Link>
               </div>
               <div className="relative h-[400px] w-full overflow-hidden">
-                <Image
+                <img
                   src="/thedermalounge-photo.jpg"
                   alt="The Derma Lounge clinic"
-                  width={1200}
-                  height={800}
-                  quality={100}
-                  priority={true}
-                  className="object-cover w-full h-full"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
